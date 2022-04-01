@@ -344,17 +344,39 @@
 
 .team {
   text-align: center;
-  height: 1540px;
   color: black;
   background-color: #f9fbfb;
-  padding: 125px 0;
+  padding: 95px 0;
+}
+
+.team__header {
+  margin-bottom: 92px;
+}
+
+.team__title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  margin-bottom: 8px;
+  margin-left: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.team__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Merriweather", sans-serif;
+  color: #5e5f5f;
+  letter-spacing: 0.09px;
+  margin-right: 2px;
 }
 
 .team__content {
-  padding: 30px;
+  padding: 30px 30px 30px 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 13px 16px;
   width: 100%;
   margin: 0 auto 0 auto;
 }
@@ -365,7 +387,7 @@
   }
 }
 .team__item {
-  height: 580px;
+  height: 438.75px;
 }
 
 .team__img {
@@ -375,17 +397,17 @@
 
 .team__info {
   text-align: left;
-  -webkit-box-shadow: 0 0 10px #bcb1b1;
-          box-shadow: 0 0 10px #bcb1b1;
-  width: 400px;
-  height: 250px;
-  top: -300px;
+  -webkit-box-shadow: 0 5px 10px #bcb1b1;
+          box-shadow: 0 5px 10px #bcb1b1;
+  width: 335px;
+  height: 241px;
+  top: -255px;
   margin: 0 auto 0 auto;
-  padding: 40px;
+  padding: 40px 38px;
   position: relative;
   background-color: #6eeee4;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   z-index: 2;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
@@ -396,11 +418,11 @@
   position: absolute;
   width: 0;
   height: 0;
-  left: 30px;
-  top: -50px;
-  border: 25px solid;
-  border-left: 15px solid;
-  border-right: 15px solid;
+  left: 20px;
+  top: -39px;
+  border: 20px solid;
+  border-left: 12px solid;
+  border-right: 12px solid;
   border-color: transparent transparent #6eeee4 transparent;
 }
 
@@ -409,16 +431,28 @@
   opacity: 1;
 }
 
-.team__name {
+.team__info-title {
+  font-family: "Merriweather";
+  font-weight: 700;
   color: #424648;
-  font-size: 24px;
+  font-size: 21px;
+  letter-spacing: 0.2px;
   margin-bottom: 10px;
+}
+
+.team__slash {
+  font-family: "Merriweather";
+  color: #898b8d;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .team__post {
   font-style: italic;
+  font-family: "Merriweather";
   color: #898b8d;
-  font-weight: 100;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .team__text {
