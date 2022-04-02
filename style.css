@@ -403,11 +403,11 @@
   height: 241px;
   top: -255px;
   margin: 0 auto 0 auto;
-  padding: 40px 38px;
+  padding: 40px 37px;
   position: relative;
   background-color: #6eeee4;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   z-index: 2;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
@@ -437,12 +437,13 @@
   color: #424648;
   font-size: 21px;
   letter-spacing: 0.2px;
-  margin-bottom: 10px;
+  padding: 0 1px;
+  margin-bottom: 16px;
 }
 
 .team__slash {
   font-family: "Merriweather";
-  color: #898b8d;
+  color: #767676;
   font-size: 15px;
   font-weight: 300;
 }
@@ -450,21 +451,36 @@
 .team__post {
   font-style: italic;
   font-family: "Merriweather";
-  color: #898b8d;
+  color: #767676;
   font-size: 15px;
   font-weight: 300;
+  position: relative;
+  left: -2px;
 }
 
 .team__text {
   font-size: 18px;
   line-height: 1.4;
-  margin-bottom: 50px;
+  letter-spacing: 0.3px;
+  margin-bottom: 31px;
 }
 
 .team__link {
-  color: #898b8d;
+  color: #515151;
+  font-size: 12px;
   text-decoration: none;
-  letter-spacing: 5px;
+  margin-left: 2px;
+  letter-spacing: 4.5px;
+}
+
+.team__link--twitter {
+  margin-left: 4.5px;
+  letter-spacing: 4px;
+}
+
+.team__link--dribble {
+  margin-left: 2px;
+  letter-spacing: 3.5px;
 }
 
 .contact {
