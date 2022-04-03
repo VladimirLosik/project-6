@@ -346,7 +346,7 @@
   text-align: center;
   color: black;
   background-color: #f9fbfb;
-  padding: 95px 0;
+  padding: 95px 0 0;
 }
 
 .team__header {
@@ -388,6 +388,7 @@
 }
 .team__item {
   height: 438.75px;
+  z-index: 1;
 }
 
 .team__img {
@@ -484,39 +485,30 @@
 }
 
 .contact {
-  padding: 100px 0;
-}
-
-@media (max-width: 750px) {
-  .contact {
-    padding: 50px 0;
-  }
-}
-.contact {
-  height: 1183px;
+  padding: 347px 0 150px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(249, 251, 251, 0.67)), to(rgba(249, 251, 251, 0.67))), url(img/christmas_snow.png);
   background-image: linear-gradient(to top, rgba(249, 251, 251, 0.67), rgba(249, 251, 251, 0.67)), url(img/christmas_snow.png);
   background-size: 100% auto;
+  position: relative;
+  top: -67px;
 }
 
-.container--flex {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container--grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 614px 26px 500px 1fr;
+  grid-template-rows: 460px;
 }
 
 .contact__form {
   margin-right: 29.4px;
-  padding: 20px;
-  width: 53.84%;
+  padding: 45px 35px 45px 30px;
+  width: 100%;
   background-color: rgba(2, 22, 35, 0.71);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,13 +522,13 @@
 }
 
 .contact__input {
+  font-size: 16px;
   width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
+  padding: 0 0 14px 3px;
+  margin-bottom: 26px;
   background-color: rgba(0, 0, 0, 0);
-  color: #bec7cc;
   border: none;
-  border-bottom: 1px solid #c4c7ca;
+  border-bottom: 1px solid rgba(196, 199, 202, 0.5);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -552,35 +544,39 @@
 }
 
 .contact__input::-webkit-input-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__input::-moz-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__input:-ms-input-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__input::-ms-input-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__input::placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
+}
+
+.contact__email {
+  padding-bottom: 12px;
 }
 
 .contact__message {
   font-size: 16px;
   width: 100%;
-  height: 100px;
-  margin-bottom: 10px;
+  height: 100%;
+  padding: 1px 0 14px 3px;
+  margin-bottom: 20px;
   resize: none;
   background-color: rgba(0, 0, 0, 0);
-  color: #bec7cc;
   border: none;
-  border-bottom: 1px solid #c4c7ca;
+  border-bottom: 1px solid rgba(196, 199, 202, 0.5);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -592,30 +588,31 @@
 }
 
 .contact__message::-webkit-input-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__message::-moz-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__message:-ms-input-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__message::-ms-input-placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__message::placeholder {
-  color: #c2c6c9;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__btn {
+  font-size: 18px;
   text-align: center;
   text-decoration: none;
-  padding: 10px 25px;
-  width: 165px;
+  padding: 15px 25px;
+  width: 243px;
   background-color: #6eeee4;
   color: #2b5f5a;
   opacity: 1;
@@ -624,11 +621,15 @@
 }
 
 .contact__content {
-  padding: 20px;
-  width: 43.84%;
+  padding: 21px;
+  width: 100%;
   background-color: #021623;
   color: #bec7cc;
   opacity: 0.71;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,9 +642,19 @@
           align-items: flex-start;
 }
 
+.contact__info {
+  padding: 10px 10px 40px 10px;
+  font-size: 15px;
+  font-family: "Raleway-Light", sans-serif;
+}
+
+.contact__item {
+  margin-bottom: 15px;
+}
+
 .contact__link {
   text-decoration: none;
-  color: #bec7cc;
+  color: rgba(196, 199, 202, 0.7);
 }
 
 .contact__link:hover {
@@ -660,9 +671,7 @@
 }
 
 .footer {
-  height: 420px;
   text-align: center;
-  padding-bottom: 60px;
   background-color: #262b2e;
   color: #d4d5d5;
 }
