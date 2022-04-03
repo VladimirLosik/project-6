@@ -502,8 +502,9 @@
 
 .contact__form {
   margin-right: 29.4px;
-  padding: 45px 35px 45px 30px;
+  padding: 45px 35px 40px 30px;
   width: 100%;
+  height: 100%;
   background-color: rgba(2, 22, 35, 0.71);
   grid-column-start: 2;
   grid-column-end: 3;
@@ -539,10 +540,6 @@
           transition-delay: 0s;
 }
 
-.contact__input:hover {
-  color: #ffffff;
-}
-
 .contact__input::-webkit-input-placeholder {
   color: rgba(196, 199, 202, 0.7);
 }
@@ -563,6 +560,26 @@
   color: rgba(196, 199, 202, 0.7);
 }
 
+.contact__input:hover .contact__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.contact__input:hover .contact__input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.contact__input:hover .contact__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact__input:hover .contact__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.contact__input:hover .contact__input::placeholder {
+  color: #ffffff;
+}
+
 .contact__email {
   padding-bottom: 12px;
 }
@@ -571,8 +588,8 @@
   font-size: 16px;
   width: 100%;
   height: 100%;
-  padding: 1px 0 14px 3px;
-  margin-bottom: 20px;
+  padding: 1px 0 0 3px;
+  margin-bottom: 38px;
   resize: none;
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -609,23 +626,25 @@
 
 .contact__btn {
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   text-align: center;
   text-decoration: none;
-  padding: 15px 25px;
+  letter-spacing: 1.8px;
+  padding: 16px 25px 14px 28px;
   width: 243px;
   background-color: #6eeee4;
   color: #2b5f5a;
   opacity: 1;
   border: none;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .contact__content {
-  padding: 21px;
+  padding: 21px 21px 18px 21px;
   width: 100%;
-  background-color: #021623;
+  background-color: rgba(2, 22, 35, 0.71);
   color: #bec7cc;
-  opacity: 0.71;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -643,31 +662,44 @@
 }
 
 .contact__info {
-  padding: 10px 10px 40px 10px;
-  font-size: 15px;
-  font-family: "Raleway-Light", sans-serif;
+  padding: 14px 10px 15px 9px;
+  font-size: 14.6px;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
 }
 
 .contact__item {
-  margin-bottom: 15px;
+  letter-spacing: 0.2px;
+  margin-bottom: 9px;
+  color: rgba(196, 199, 202, 0.7);
+}
+
+.contact__item--adress1 {
+  letter-spacing: 0.1px;
+}
+
+.contact__item--adress2 {
+  letter-spacing: 0.15px;
+  margin-bottom: 10px;
+}
+
+.contact__item--fax {
+  margin-bottom: 33px;
 }
 
 .contact__link {
   text-decoration: none;
   color: rgba(196, 199, 202, 0.7);
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
 .contact__link:hover {
   color: #ffffff;
 }
 
-.contact--margin {
-  margin-bottom: 20px;
-}
-
 .contact__map {
   width: 100%;
-  padding: 0 13px 13px 13px;
 }
 
 .footer {
