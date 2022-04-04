@@ -485,12 +485,12 @@
 }
 
 .contact {
-  padding: 347px 0 150px;
+  padding: 348px 0 150px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(249, 251, 251, 0.67)), to(rgba(249, 251, 251, 0.67))), url(img/christmas_snow.png);
   background-image: linear-gradient(to top, rgba(249, 251, 251, 0.67), rgba(249, 251, 251, 0.67)), url(img/christmas_snow.png);
   background-size: 100% auto;
   position: relative;
-  top: -67px;
+  top: -68px;
 }
 
 .container--grid {
@@ -528,6 +528,7 @@
   padding: 0 0 14px 3px;
   margin-bottom: 26px;
   background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
   border: none;
   border-bottom: 1px solid rgba(196, 199, 202, 0.5);
   -webkit-transition-property: color;
@@ -560,26 +561,6 @@
   color: rgba(196, 199, 202, 0.7);
 }
 
-.contact__input:hover .contact__input::-webkit-input-placeholder {
-  color: #ffffff;
-}
-
-.contact__input:hover .contact__input::-moz-placeholder {
-  color: #ffffff;
-}
-
-.contact__input:hover .contact__input:-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.contact__input:hover .contact__input::-ms-input-placeholder {
-  color: #ffffff;
-}
-
-.contact__input:hover .contact__input::placeholder {
-  color: #ffffff;
-}
-
 .contact__email {
   padding-bottom: 12px;
 }
@@ -592,6 +573,7 @@
   margin-bottom: 38px;
   resize: none;
   background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
   border: none;
   border-bottom: 1px solid rgba(196, 199, 202, 0.5);
   -webkit-transition-property: color;
@@ -631,13 +613,22 @@
   text-align: center;
   text-decoration: none;
   letter-spacing: 1.8px;
-  padding: 16px 25px 14px 28px;
+  padding: 13px 22px 11px 25px;
   width: 243px;
   background-color: #6eeee4;
   color: #2b5f5a;
   opacity: 1;
-  border: none;
+  border: 3px solid #6eeee4;
   border-radius: 1px;
+  -webkit-transition: all 0.4s linear 0s;
+  transition: all 0.4s linear 0s;
+}
+
+.contact__btn:hover {
+  background-color: rgba(110, 238, 228, 0.3);
+  color: white;
+  padding: 13px 22px 11px 25px;
+  border: 3px solid #6eeee4;
 }
 
 .contact__content {
@@ -672,6 +663,12 @@
   letter-spacing: 0.2px;
   margin-bottom: 9px;
   color: rgba(196, 199, 202, 0.7);
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.contact__item:hover {
+  color: #6eeee4;
 }
 
 .contact__item--adress1 {
@@ -690,8 +687,8 @@
 .contact__link {
   text-decoration: none;
   color: rgba(196, 199, 202, 0.7);
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .contact__link:hover {
@@ -706,6 +703,9 @@
   text-align: center;
   background-color: #262b2e;
   color: #d4d5d5;
+  position: relative;
+  margin-top: -95px;
+  padding: 92px 0 135px 0;
 }
 
 .container--column {
@@ -726,11 +726,16 @@
 }
 
 .footer__text {
-  font-size: 20px;
+  font-size: 16px;
+  font-family: "Raleway";
+  font-weight: 400;
+  margin-right: 4px;
+  letter-spacing: 0.1px;
 }
 
 .footer__contact {
   margin-top: 15px;
+  margin-right: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,19 +746,52 @@
 
 .footer__item {
   text-align: center;
-  font-size: 25px;
-  width: 60px;
-  height: 48px;
-  padding: 3px 5px;
-  margin: 0 5px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 45px;
+  height: 40px;
+  margin: 0 4px 15px 4px;
+  padding: 11px 12.5px 9px 12.5px;
   background-color: #424648;
   color: #bbb8b9;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.footer__item:hover {
+  margin: 8px 4px 7px 4px;
+  border-radius: 5px;
+  color: #070e0d;
 }
 
 .footer__item--aqua {
-  font-size: 30px;
-  height: 50px;
-  padding: 4px 5px;
+  font-size: 22px;
+  height: 40px;
+  padding: 10px 14.5px 8px 14px;
   background-color: #6eeee4;
   color: #070e0d;
+}
+
+.footer__item--aqua:hover {
+  background-color: orange;
+}
+
+.footer__twitter {
+  width: 45.5px;
+}
+
+.footer__twitter:hover {
+  background-color: yellow;
+}
+
+.footer__facebook:hover {
+  background-color: #6eeee4;
+}
+
+.footer__dribble:hover {
+  background-color: purple;
 }
