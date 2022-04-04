@@ -163,6 +163,14 @@
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.header__btn:hover {
+  background-color: rgba(110, 238, 228, 0.3);
+  -webkit-box-shadow: 0 0 10px #515151;
+          box-shadow: 0 0 10px #515151;
 }
 
 .header__btn-cont {
@@ -474,6 +482,16 @@
   letter-spacing: 4.5px;
 }
 
+.team__icon {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.team__icon:hover {
+  color: white;
+  text-shadow: 0 0 10px #515151;
+}
+
 .team__link--twitter {
   margin-left: 4.5px;
   letter-spacing: 4px;
@@ -777,7 +795,8 @@
 }
 
 .footer__item--aqua:hover {
-  background-color: orange;
+  color: white;
+  background-color: #E60023;
 }
 
 .footer__twitter {
@@ -785,13 +804,16 @@
 }
 
 .footer__twitter:hover {
-  background-color: yellow;
+  color: white;
+  background-color: #00acee;
 }
 
 .footer__facebook:hover {
-  background-color: #6eeee4;
+  color: white;
+  background-color: #4267B2;
 }
 
 .footer__dribble:hover {
-  background-color: purple;
+  color: #902d86;
+  background-color: #ea4c89;
 }
