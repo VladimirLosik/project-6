@@ -61,6 +61,16 @@ html {
     margin: 0 auto 142.5px 90px;
   }
 }
+@media (max-width: 500px) {
+  .header__logo {
+    font-size: 14px;
+    width: 90px;
+    margin: 0 auto 142.5px 30px;
+    border: 3px solid black;
+    border-right: 4px solid black;
+    border-left: 4px solid black;
+  }
+}
 
 .header__logo:hover {
   border-radius: 3px;
@@ -80,6 +90,11 @@ html {
   display: flex;
   -ms-flex-item-align: end;
       align-self: end;
+}
+@media (max-width: 500px) {
+  .header__aqua-letter {
+    font-size: 17px;
+  }
 }
 
 .header__line {
@@ -518,8 +533,8 @@ html {
   padding: 40px 37px;
   position: relative;
   background-color: #6eeee4;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   z-index: 2;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
@@ -558,12 +573,22 @@ html {
   padding: 0 1px;
   margin-bottom: 16px;
 }
+@media (max-width: 450px) {
+  .team__info-title {
+    font-size: 17px;
+  }
+}
 
 .team__slash {
   font-family: "Merriweather";
   color: #767676;
   font-size: 15px;
   font-weight: 300;
+}
+@media (max-width: 450px) {
+  .team__slash {
+    font-size: 13px;
+  }
 }
 
 .team__post {
@@ -575,12 +600,22 @@ html {
   position: relative;
   left: -2px;
 }
+@media (max-width: 450px) {
+  .team__post {
+    font-size: 13px;
+  }
+}
 
 .team__text {
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.3px;
   margin-bottom: 31px;
+}
+@media (max-width: 450px) {
+  .team__text {
+    font-size: 15px;
+  }
 }
 
 .team__link {
@@ -720,7 +755,7 @@ html {
   font-weight: 300;
   font-family: "Raleway", sans-serif;
   width: 100%;
-  height: 100%;
+  height: 106px;
   padding: 1px 0 0 3px;
   margin-bottom: 38px;
   resize: none;
@@ -765,13 +800,23 @@ html {
   text-align: center;
   text-decoration: none;
   letter-spacing: 1.8px;
-  padding: 13px 22px 11px 25px;
+  padding: 5px 2px 3px 5px;
   width: 243px;
+  height: 52px;
   background-color: #6eeee4;
   color: #2b5f5a;
   opacity: 1;
   border: 3px solid #6eeee4;
   border-radius: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.4s linear 0s;
   transition: all 0.4s linear 0s;
 }
@@ -786,8 +831,6 @@ html {
 .contact__btn:hover {
   background-color: rgba(110, 238, 228, 0.3);
   color: white;
-  padding: 13px 22px 11px 25px;
-  border: 3px solid #6eeee4;
 }
 
 .contact__content {
@@ -857,11 +900,13 @@ html {
 }
 
 .contact__map {
-  width: 100%;
+  width: 455px;
+  height: 255px;
 }
 @media (max-width: 577px) {
   .contact__map {
-    display: none;
+    max-width: 455px;
+    width: 100%;
   }
 }
 
