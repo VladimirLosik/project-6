@@ -1,13 +1,17 @@
-function PopUpShow(){
-    $("#popup1").show();
-}
-function PopUpHide(){
-    $("#popup1").hide();
-}
+$('.works__btn').click(function() {
+    $('.works__item').css('filter','blur(5px)');
+    $('.works__overlay').fadeIn();
+})
 
-function PopUpShow(){
-    $("#popup2").show();
-}
-function PopUpHide(){
-    $("#popup2").hide();
-}
+$('.works__close-popup').click(function() {
+    $('.works__overlay').fadeOut();
+    $('.works__item').css('filter','none');
+})
+
+$(document).mouseup(function (e) {
+    var popup = $('.works__popup');
+    if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+        $('.works__overlay').fadeOut();
+        $('.works__item').css('filter','none');
+    }
+})

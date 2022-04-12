@@ -422,11 +422,10 @@ html {
   width: 100%;
 }
 
-.works__popup {
+.works__overlay {
   text-align: center;
   width: 100%;
   min-height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   display: none;
   position: fixed;
@@ -434,7 +433,7 @@ html {
   left: 0px;
 }
 
-.works__img--popup {
+.works__popup-img {
   margin: 40px auto 0 auto;
   width: 40%;
   min-width: 500px;
@@ -544,8 +543,8 @@ html {
   padding: 40px 37px;
   position: relative;
   background-color: #6eeee4;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   z-index: 2;
   -webkit-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
