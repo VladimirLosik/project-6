@@ -1,17 +1,83 @@
-$('.works__btn').click(function() {
-    $('.works__item').css('filter','blur(5px)');
-    $('.works__overlay').fadeIn();
-})
+;(function($) {
+    $(function() {
+        $('#btn1').bind('click', function(e) {
+            e.preventDefault();
+            $('#popup1').bPopup({
+                content:'image', 
+                positionStyle: 'fixed',
+                loadUrl:'img/ft1.png',
+                closeClass:'works__overlay',
+            });
+        });
+    });
+})(jQuery);   
+ 
+;(function($) {
+    $(function() {
+        $('#btn2').bind('click', function(e) {
+            e.preventDefault();
+            $('#popup2').bPopup({
+                content:'image', 
+                loadUrl:'img/ft2.png',
+                positionStyle: 'fixed',
+                closeClass:'works__overlay',
+            });
+        });
+    });
+})(jQuery);  
 
-$('.works__close-popup').click(function() {
-    $('.works__overlay').fadeOut();
-    $('.works__item').css('filter','none');
-})
+;(function($) {
+    $(function() {
+        $('#btn3').bind('click', function(e) {
+            e.preventDefault();
+            $('#popup3').bPopup({
+                content:'image', 
+                positionStyle: 'fixed',
+                loadUrl:'img/ft3.png',
+                closeClass:'works__overlay',
+            });
+        });
+    });
+})(jQuery);  
 
-$(document).mouseup(function (e) {
-    var popup = $('.works__popup');
-    if (e.target!=popup[0]&&popup.has(e.target).length === 0){
-        $('.works__overlay').fadeOut();
-        $('.works__item').css('filter','none');
-    }
-})
+;(function($) {
+    $(function() {
+        $('#btn4').bind('click', function(e) {
+            e.preventDefault();
+            $('#popup4').bPopup({
+                content:'image', 
+                positionStyle: 'fixed',
+                loadUrl:'img/ft4.png',
+                closeClass:'works__overlay',
+            });
+        });
+    });
+})(jQuery);  
+
+;(function($) {
+    $(function() {
+        $('#btn5').bind('click', function(e) {
+            e.preventDefault();
+            $('#popup5').bPopup({
+                content:'image', 
+                positionStyle: 'fixed',
+                loadUrl:'img/ft5.png',
+                closeClass:'works__overlay',
+            });
+        });
+    });
+})(jQuery);  
+
+;(function($) {
+    $(function() {
+        $('#btn6').bind('click', function(e) {
+            e.preventDefault();
+            $('#popup6').bPopup({
+                content:'image', 
+                positionStyle: 'fixed',
+                loadUrl:'img/ft6.png',
+                closeClass:'works__overlay',
+            });
+        });
+    });
+})(jQuery);  

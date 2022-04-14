@@ -5,20 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="reset/reset.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet">
-	<link href='font/FredokaOne-Regular.ttf' rel='stylesheet' type='text/css'>
-	<link href='font/Montserrat-Bold.ttf' rel='stylesheet' type='text/css'>
-	<link href='font/Montserrat-Medium.ttf' rel='stylesheet' type='text/css'>
-	<link href='font/Lato-Regular.ttf' rel='stylesheet' type="text/css">
-	<link href='font/Merriweather-Light.ttf' rel='stylesheet' type="text/css">
-	<link href='font/Merriweather-LightItalic.ttf' rel='stylesheet' type="text/css">
-	<link href='font/Merriweather-Bold.ttf' rel='stylesheet' type="text/css">
-	<link href='font/Raleway-Light.ttf' rel='stylesheet' type="text/css">
-	<link href='font/Raleway-Regular.ttf' rel='stylesheet' type="text/css">
+	<link href='fonts/FredokaOne-Regular.ttf' rel='stylesheet' type='text/css'>
+	<link href='fonts/Montserrat-Bold.ttf' rel='stylesheet' type='text/css'>
+	<link href='fonts/Montserrat-Medium.ttf' rel='stylesheet' type='text/css'>
+	<link href='fonts/Lato-Regular.ttf' rel='stylesheet' type="text/css">
+	<link href='fonts/Merriweather-Light.ttf' rel='stylesheet' type="text/css">
+	<link href='fonts/Merriweather-LightItalic.ttf' rel='stylesheet' type="text/css">
+	<link href='fonts/Merriweather-Bold.ttf' rel='stylesheet' type="text/css">
+	<link href='fonts/Raleway-Light.ttf' rel='stylesheet' type="text/css">
+	<link href='fonts/Raleway-Regular.ttf' rel='stylesheet' type="text/css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bPopup/0.11.0/jquery.bpopup.min.js"></script>	
 	<script src="js.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=YourAPIkey&lang=en_US"></script>
 	<script src="https://kit.fontawesome.com/c2f3193ccf.js" crossorigin="anonymous"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="jquery.bpopup-3.5.1.min.js"></script>
 	<title>Project 6</title>	
 </head>
 <body>
@@ -74,33 +74,58 @@
 		</div>
 		<div class="works__content">
 			<div class="works__item">
-				<a class="works__btn" href="">
-					<img class="works__img" src="img/ft1.png" alt="work1">
+				<a class="works__btn" id="btn1" href="">
+					<img class="works__img" src="img/ft1.png" alt="work__img1">
 				</a>
-				<div class="works__overlay" id="popup1">
-					<a class="works__popup" href="" id="btn-close1">
-						<img class="works__popup-img" src="img/ft1.png" alt="work-popup">
-						<div class="works__close-popup">X</div>
-					</a>
+				<div class="works__overlay">
+					<img class="works__popup" id="popup1" src="img/ft1.png" alt="work__popup">
 				</div>
 			</div>
 
-			<a class="works__link" href="">
-				<img class="works__img" src="img/ft2.png" alt="work1">
-			</a>		
+			<div class="works__item">
+				<a class="works__btn" id="btn2" href="">
+					<img class="works__img" src="img/ft2.png" alt="work__img2">
+				</a>
+				<div class="works__overlay">
+					<img class="works__popup" id="popup2" src="img/ft2.png" alt="work__popup">
+				</div>
+			</div>
 
-			<a class="works__link" href="">
-				<img class="works__img" src="img/ft3.png" alt="work3">
-			</a>
-			<a class="works__link" href="">
-				<img class="works__img" src="img/ft4.png" alt="work4">
-			</a>
-			<a class="works__link" href="">
-				<img class="works__img" src="img/ft5.png" alt="work5">
-			</a>
-			<a class="works__link" href="">
-				<img class="works__img" src="img/ft6.png" alt="work6">
-			</a>
+			<div class="works__item">
+				<a class="works__btn" id="btn3" href="">
+					<img class="works__img" src="img/ft3.png" alt="work__img3">
+				</a>
+				<div class="works__overlay">
+					<img class="works__popup" id="popup3" src="img/ft3.png" alt="work__popup">
+				</div>
+			</div>
+
+			<div class="works__item">
+				<a class="works__btn" id="btn4" href="">
+					<img class="works__img" src="img/ft4.png" alt="work__img4">
+				</a>
+				<div class="works__overlay">
+					<img class="works__popup" id="popup4" src="img/ft4.png" alt="work__popup">
+				</div>
+			</div>
+
+			<div class="works__item">
+				<a class="works__btn" id="btn5" href="">
+					<img class="works__img" src="img/ft5.png" alt="work__img5">
+				</a>
+				<div class="works__overlay">
+					<img class="works__popup" id="popup5" src="img/ft5.png" alt="work__popup">
+				</div>
+			</div>
+
+			<div class="works__item">
+				<a class="works__btn" id="btn6" href="">
+					<img class="works__img" src="img/ft6.png" alt="work__img6">
+				</a>
+				<div class="works__overlay">
+					<img class="works__popup" id="popup6" src="img/ft6.png" alt="work__popup">
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -275,9 +300,9 @@
 		</form>
 		<div class="contact__content">
 			<div class="contact__info">
-				<p class="contact__item contact__item--adress1">
+				<h6 class="contact__item contact__item--adress1">
 					<a class="contact__link" href="">Adress line 1</a>
-				</p>
+				</h6>
 				<p class="contact__item contact__item--adress2">
 					<a class="contact__link" href="">Adress line 2</a>
 				</p>
